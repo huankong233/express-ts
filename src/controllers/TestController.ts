@@ -1,4 +1,4 @@
-import { UserRepository } from '@/Model/DataSource.ts'
+import { UserRepository } from '@/model/DataSource.ts'
 import { failure, success } from '@/utils/response.ts'
 import type { Request, Response } from 'express'
 

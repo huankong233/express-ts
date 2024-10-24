@@ -1,7 +1,7 @@
 import routes from '@/routes.ts'
 import type { Routes } from '@/types.d.ts'
+import logger from '@/utils/logger.ts'
 import { Express } from 'express'
-import logger from './logger.ts'
 
 function makeRoutes(app: Express) {
   const registerRoutes = (routes: Routes, basePath: string = '') => {

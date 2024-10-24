@@ -1,6 +1,6 @@
-import TestController from './controllers/TestController.ts'
-import responseHeader from './middleware/ResponseHeader.ts'
-import type { Routes } from './types.ts'
+import TestController from '@/controllers/TestController.ts'
+import responseHeader from '@/middleware/ResponseHeader.ts'
+import type { Routes } from '@/types.ts'
 
 const routes: Routes = {
   middlewares: [responseHeader],

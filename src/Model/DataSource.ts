@@ -1,4 +1,4 @@
-import { User } from '@/Model/User.ts'
+import { User } from '@/model/User.ts'
 import { DataSource } from 'typeorm'
 
 export const AppDataSource = new DataSource({
