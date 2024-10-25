@@ -10,9 +10,13 @@ const routes: Routes = {
         '/': [
           { method: 'get', handler: TestController.get },
           { method: 'put', handler: TestController.put },
-          { method: 'delete', handler: TestController.delete }
-        ],
-        '/item': { method: 'get', handler: TestController.getItem }
+          { method: 'delete', handler: TestController.delete },
+          {
+            routes: {
+              '/:id': { method: 'get', handler: TestController.getItem }
+            }
+          }
+        ]
       }
     }
   }

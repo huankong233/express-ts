@@ -11,7 +11,7 @@ export interface RouteUnit {
 
 export interface RouteGroup {
   middlewares?: Middleware[]
-  routes: { [key: string]: RouteGroup | RouteUnit | RouteUnit[] }
+  routes: { [key: string]: RouteGroup | RouteUnit | (RouteUnit | RouteGroup)[] }
 }
 
 export type Routes = RouteGroup
